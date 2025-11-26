@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MiCampus</title>
+
+    <link rel="stylesheet" href="css/campus.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">MiCampus</div>
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="perfil.html">Perfil</a>
+    </nav>
+</header>
+
+<main class="dashboard-main">
+    
+    <div class="welcome-section">
+        <h1>Hola, Estudiante</h1>
+        <p>Aquí tienes el resumen de tu avance académico hoy.</p>
+    </div>
+
+    <div class="kpi-grid">
+        
+        <div class="card kpi-card">
+            <div class="card-top">
+                <span class="kpi-label" style="color: #4a90e2;">Promedio</span>
+                <i class="fas fa-graduation-cap icon-corner" style="color: #4a90e2;"></i>
+            </div>
+            <div class="kpi-value">5.8</div>
+            <div class="kpi-trend positive">
+                <i class="fas fa-arrow-up"></i> +0.2 este mes
+            </div>
+        </div>
+
+        <div class="card kpi-card">
+            <div class="card-top">
+                <span class="kpi-label" style="color: #e67e22;">Asistencia</span>
+                <i class="fas fa-chart-pie icon-corner" style="color: #e67e22;"></i>
+            </div>
+            <div class="kpi-value">85%</div>
+            
+            <div class="progress-wrapper">
+                <div class="progress-bg">
+                    <div class="progress-fill warning" style="width: 85%;"></div>
+                </div>
+            </div>
+            <small class="text-muted">¡Cuidado! No bajes del 75%.</small>
+        </div>
+
+        <div class="card live-card">
+            <div class="live-content">
+                <div class="live-header">
+                    <i class="fas fa-video"></i> En vivo ahora
+                </div>
+                <h3>Gestión de Proyectos Informáticos</h3>
+                <p>Docente: Vicente Aranda</p>
+                <button class="btn-zoom">
+                    Unirse a Clase (Zoom)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="secondary-grid">
+        
+        <div class="card info-panel">
+            <h3><i class="far fa-calendar-alt"></i> Próximas Evaluaciones</h3>
+            <ul class="event-list">
+                <li>
+                    <div class="date-box">
+                        <span class="day">28</span>
+                        <span class="month">NOV</span>
+                    </div>
+                    <div class="event-details">
+                        <strong>Entrega Informe 2</strong>
+                        <span>Gestión de Proyectos</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="date-box">
+                        <span class="day">05</span>
+                        <span class="month">DIC</span>
+                    </div>
+                    <div class="event-details">
+                        <strong>Examen Transversal</strong>
+                        <span>Desarrollo Full Stack II</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card info-panel">
+            <h3><i class="far fa-bell"></i> Avisos Recientes</h3>
+            <div class="notification-item">
+                <div class="icon-circle"><i class="fas fa-info"></i></div>
+                <div>
+                    <strong>Mantenimiento Campus Virtual</strong>
+                    <p>La plataforma estará en mantención este sábado de 22:00 a 00:00 hrs.</p>
+                </div>
+            </div>
+            <div class="notification-item">
+                <div class="icon-circle success"><i class="fas fa-check"></i></div>
+                <div>
+                    <strong>Matrícula Confirmada</strong>
+                    <p>Tu proceso de matrícula para el 2026 ha sido exitoso.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+<footer class="footer">
+    <p>© 2025 MiCampus - Instituto Profesional Crecer Más</p>
+</footer>
+
+</body>
+</html>

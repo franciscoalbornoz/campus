@@ -1,0 +1,137 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.5;
+}
+
+
+
+.header {
+    width: 100%;
+    padding: 15px 40px;
+    background: #002b5c; 
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav a {
+    color: #fff;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.nav a:hover {
+    opacity: 0.7;
+}
+
+
+
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url("imagenes/campus.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.btn-principal {
+    margin-top: 25px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #ffcc00;
+    color: #333;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-principal:hover {
+    background: #e0b700;
+}
+
+
+
+.destacados {
+    padding: 50px 40px;
+}
+
+.destacados h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #003c7a;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 16px rgba(0,0,0,0.1);
+}
+
+
+
+.footer {
+    margin-top: 60px;
+    background: #002b5c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+

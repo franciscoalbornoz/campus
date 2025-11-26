@@ -1,0 +1,266 @@
+
+
+body {
+   
+    background: linear-gradient(135deg, #003366 0%, #001a33 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    background: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(12px);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.nav a {
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav a:hover, .nav a.active {
+    color: #ffcc00; 
+    opacity: 1;
+}
+
+
+.dashboard-main {
+    padding: 100px 5% 50px 5%; 
+    flex: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Sección de Bienvenida */
+.welcome-section {
+    color: white;
+    margin-bottom: 30px;
+}
+.welcome-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.welcome-section p {
+    color: #cbd5e1;
+}
+
+
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.kpi-label {
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.icon-corner {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.kpi-value {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+/* Tendencia Verde */
+.kpi-trend.positive {
+    color: #27ae60;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Barra de Asistencia */
+.progress-wrapper {
+    height: 10px;
+    background: #f1f5f9;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.progress-fill.warning {
+    background: #e67e22; /* Naranja */
+    height: 100%;
+    border-radius: 5px;
+}
+
+.text-muted {
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.live-card {
+   
+    background: linear-gradient(135deg, #6a67ce 0%, #5c59b6 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.live-header {
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.live-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    line-height: 1.2;
+}
+
+.live-content p {
+    opacity: 0.9;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.btn-zoom {
+    background: white;
+    color: #5c59b6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.btn-zoom:hover {
+    transform: scale(1.05);
+}
+
+
+/* GRID SECUNDARIO (Info abajo) */
+.secondary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+}
+
+.info-panel h3 {
+    color: #334155;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Lista de Eventos */
+.event-list {
+    list-style: none;
+    padding: 0;
+}
+
+.event-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.event-list li:last-child {
+    border-bottom: none;
+}
+
+.date-box {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 15px;
+    min-width: 60px;
+}
+
+.date-box .day { display: block; font-size: 1.2rem; font-weight: 700; }
+.date-box .month { display: block; font-size: 0.7rem; text-transform: uppercase; }
+
+.event-details strong { display: block; color: #1e293b; }
+.event-details span { font-size: 0.9rem; color: #64748b; }
+
+/* Notificaciones */
+.notification-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    background: #e0f2fe;
+    color: #0ea5e9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon-circle.success {
+    background: #dcfce7;
+    color: #22c55e;
+}
+
+.notification-item strong {
+    font-size: 0.95rem;
+    color: #333;
+}
+.notification-item p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 2px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: rgba(255,255,255,0.4);
+    font-size: 0.8rem;
+    margin-top: auto;
+}

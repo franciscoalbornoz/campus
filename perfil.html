@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - MiCampus</title>
+
+    <link rel="stylesheet" href="css/campus.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">MiCampus</div>
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="perfil.html" class="active">Perfil</a>
+    </nav>
+</header>
+
+<main class="perfil-main">
+    
+    <div class="profile-container">
+
+        <aside class="profile-card">
+            <div class="cover-photo"></div>
+            <div class="profile-avatar">
+                <i class="fas fa-user"></i>
+            </div>
+            
+            <div class="profile-info">
+                <h2>Alexander Rosas</h2>
+                <p class="career">Ingeniería en Informática</p>
+                <span class="status-badge">Alumno Regular</span>
+
+                <div class="stats-mini">
+                    <div>
+                        <strong>4°</strong>
+                        <span>Semestre</span>
+                    </div>
+                    <div>
+                        <strong>5.8</strong>
+                        <span>Promedio</span>
+                    </div>
+                    <div>
+                        <strong>90%</strong>
+                        <span>Asistencia</span>
+                    </div>
+                </div>
+
+                <div class="profile-actions">
+                    <button class="btn-primary">Editar Foto</button>
+                    <button class="btn-secondary"><i class="fas fa-id-card"></i> Credencial Virtual</button>
+                </div>
+            </div>
+        </aside>
+
+        <section class="profile-details">
+            
+            <div class="detail-card">
+                <div class="card-header">
+                    <h3><i class="far fa-user-circle"></i> Información Personal</h3>
+                    <button class="btn-edit"><i class="fas fa-pen"></i></button>
+                </div>
+                
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>RUT</label>
+                        <input type="text" value="19.456.789-K" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Correo Institucional</label>
+                        <input type="text" value="a.rosas@alumnos.crecermas.cl" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="text" value="+56 9 1234 5678" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Sede</label>
+                        <input type="text" value="San Bernardo" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-card">
+                <div class="card-header">
+                    <h3><i class="fas fa-graduation-cap"></i> Estado Académico</h3>
+                </div>
+
+                <div class="academic-progress">
+                    <div class="progress-info">
+                        <span>Avance de la Carrera</span>
+                        <span>45% Completado</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" style="width: 45%;"></div>
+                    </div>
+                    <p class="description">Has aprobado 18 de 40 asignaturas obligatorias.</p>
+                </div>
+
+                <div class="tags-container">
+                    <span class="tag">Becado 50%</span>
+                    <span class="tag">Deportista Destacado</span>
+                </div>
+            </div>
+
+            <div class="detail-card">
+                <div class="card-header">
+                    <h3><i class="fas fa-shield-alt"></i> Seguridad</h3>
+                </div>
+                <div class="security-row">
+                    <div>
+                        <strong>Contraseña</strong>
+                        <p>Último cambio hace 3 meses</p>
+                    </div>
+                    <button class="btn-outline">Cambiar</button>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+<footer class="footer">
+    <p>© 2025 MiCampus - Instituto Profesional Crecer Más</p>
+</footer>
+
+</body>
+</html>
