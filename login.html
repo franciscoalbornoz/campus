@@ -33,22 +33,24 @@
                 </div>
                 <h3>Iniciar Sesión</h3>
                 
-                <form>
+                <form id="loginForm">
                     <div class="input-group">
-                        <label>Usuario</label>
-                        <input type="text" placeholder="Ej: 18.123.456-7">
+                        <label>Usuario (Correo)</label>
+                        <input type="email" id="email" placeholder="Ej: a.rosas@alumnos.cl" required>
                     </div>
 
                     <div class="input-group">
                         <label>Contraseña</label>
-                        <input type="password" placeholder="••••••••">
+                        <input type="password" id="password" placeholder="Máx. 10 caracteres" maxlength="10" required>
                     </div>
+
+                    <p id="error-message" style="color: #e74c3c; display: none; font-size: 0.8rem; margin-bottom: 10px; text-align: center;"></p>
 
                     <div class="actions">
                         <a href="#">¿Olvidaste tu contraseña?</a>
                     </div>
 
-                    <button type="submit" class="btn-login">Ingresar</button>
+                    <button type="submit" class="btn-login" id="loginBtn">Ingresar</button>
                 </form>
             </div>
         </div>
@@ -58,5 +60,6 @@
         <p>© 2025 MiCampus - Instituto Profesional Crecer Más</p>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
