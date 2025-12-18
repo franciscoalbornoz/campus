@@ -178,3 +178,21 @@ body {
         display: none;
     }
 }
+
+.btn-profesor{
+    margin-top: 10px;
+    padding: 12px;
+    background: #ffffff;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    color: #003366;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.btn-profesor:hover{
+    background: #fff4bf;
+    transform: translateY(-2px);
+}

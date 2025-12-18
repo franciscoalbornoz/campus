@@ -1,0 +1,160 @@
+.main-profesor{
+    padding: 110px 0 60px;
+    background: linear-gradient(135deg, #003366 0%, #001a33 100%);
+    min-height: 100vh;
+}
+
+.hero-profesor{
+    width: min(1200px, 92%);
+    margin: 0 auto 20px;
+    color: white;
+}
+
+.hero-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-profesor h1{
+    margin: 0;
+    font-size: 38px;
+}
+
+.hero-profesor p{
+    margin-top: 6px;
+    opacity: 0.85;
+}
+
+.badge-docente{
+    background: rgba(255,255,255,0.15);
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.card-profesor{
+    width: min(1200px, 92%);
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.curso-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.curso-titulo{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.codigo{
+    background: #003366;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.acciones{
+    display: flex;
+    gap: 10px;
+}
+
+.btn-publicar{
+    background: #003366;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-volver{
+    background: #ffcc00;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #003366;
+}
+
+.tabla{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla th{
+    background: #f2f5f8;
+    padding: 14px;
+    text-align: left;
+}
+
+.tabla td{
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.alumno{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.alumno span{
+    display: block;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.avatar{
+    width: 40px;
+    height: 40px;
+    background: #003366;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+input{
+    width: 90px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.estado{
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.estado.ok{
+    background: #e9fff1;
+    color: #167a3f;
+}
+
+.estado.warn{
+    background: #fff3cd;
+    color: #856404;
+}
+
+.nota{
+    margin-top: 14px;
+    font-size: 0.8rem;
+    color: #666;
+}

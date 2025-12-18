@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Profesor - MiCampus</title>
+
+    <link rel="stylesheet" href="css/campus.css">
+    <link rel="stylesheet" href="css/profesor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">MiCampus</div>
+    <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="perfil.html">Perfil</a>
+    </nav>
+</header>
+
+<main class="main-profesor">
+
+    <section class="hero-profesor">
+        <div class="hero-content">
+            <div>
+                <h1>Panel del Profesor</h1>
+                <p>Gestión de calificaciones y asistencia</p>
+            </div>
+
+            <span class="badge-docente">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                Vista Docente
+            </span>
+        </div>
+    </section>
+
+    <section class="card-profesor">
+
+        <div class="curso-header">
+            <div class="curso-titulo">
+                <span class="codigo">GPY6111</span>
+                <div>
+                    <h2>Gestión de Proyectos Informáticos</h2>
+                    <p>Periodo 2025-1 · Sección 012D</p>
+                </div>
+            </div>
+
+            <div class="acciones">
+                <button class="btn-publicar">
+                    <i class="fa-solid fa-bullhorn"></i> Publicar
+                </button>
+                <button class="btn-volver" onclick="location.href='dashboard.html'">
+                    Volver
+                </button>
+            </div>
+        </div>
+
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Alumno/a</th>
+                    <th>Nota</th>
+                    <th>Asistencia</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td class="alumno">
+                        <div class="avatar">AR</div>
+                        <div>
+                            <strong>Ana Rosas</strong>
+                            <span>a.rosas@alumnos.cl</span>
+                        </div>
+                    </td>
+                    <td><input value="5.8"></td>
+                    <td><input value="85%"></td>
+                    <td><span class="estado ok">Al día</span></td>
+                </tr>
+
+                <tr>
+                    <td class="alumno">
+                        <div class="avatar">CS</div>
+                        <div>
+                            <strong>Cristóbal Sepúlveda</strong>
+                            <span>c.sepulveda@alumnos.cl</span>
+                        </div>
+                    </td>
+                    <td><input value="6.2"></td>
+                    <td><input value="92%"></td>
+                    <td><span class="estado ok">Al día</span></td>
+                </tr>
+
+                <tr>
+                    <td class="alumno">
+                        <div class="avatar">BP</div>
+                        <div>
+                            <strong>Benjamín Piñones</strong>
+                            <span>b.pinones@alumnos.cl</span>
+                        </div>
+                    </td>
+                    <td><input value="4.9"></td>
+                    <td><input value="74%"></td>
+                    <td><span class="estado warn">Riesgo</span></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <p class="nota">
+            * Prototipo visual, no guarda información real.
+        </p>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2025 MiCampus - Instituto Profesional Crecer Más</p>
+</footer>
+
+</body>
+</html>
